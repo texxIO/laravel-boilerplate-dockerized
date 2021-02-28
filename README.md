@@ -1,4 +1,4 @@
-This repo is based on this [docker-compose-laravel](https://github.com/aschmelyun/docker-compose-laravel) repo for the docker structure and on this 
+This repo is based on this [docker-compose-laravel](https://github.com/aschmelyun/docker-compose-laravel) repo for the docker structure and on  
 [Laravel Boilerplate](https://github.com/rappasoft/laravel-boilerplate) for the Laravel boilerplate.
 
 Added MongoDB container and updated the Laravel app in order to use it.
