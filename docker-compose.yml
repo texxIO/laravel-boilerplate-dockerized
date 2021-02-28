@@ -38,7 +38,7 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - "./db/mysql:/var/lib/mysql"
+      - "./data/mysql:/var/lib/mysql"
     networks:
       - laravel
   php:
@@ -71,7 +71,7 @@ services:
     depends_on:
       - php
     user: laravel
-    entrypoint: ['composer', '--ignore-platform-req=php']
+    entrypoint: ['composer', '--ignore-platform-reqs']
     networks:
       - laravel
 
@@ -112,7 +112,7 @@ services:
     image: mongo:4.2
     container_name: mongo
     volumes:
-      - "./db/mongodb:/data/db"
+      - "./data/mongodb:/data/db"
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: 12345
