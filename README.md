@@ -1,3 +1,10 @@
+This repo is based on this [docker-compose-laravel](https://github.com/aschmelyun/docker-compose-laravel) repo for the docker structure and on this 
+[Laravel Boilerplate](https://github.com/rappasoft/laravel-boilerplate) for the Laravel boilerplate.
+
+Added MongoDB container and updated the Laravel app in order to use it.
+
+Added MySQL 8
+
 # docker-compose-laravel
 A pretty simplified Docker Compose workflow that sets up a LEMP network of containers for local Laravel development. You can view the full article that inspired this repo [here](https://dev.to/aschmelyun/the-beauty-of-docker-for-local-laravel-development-13c0).
 
@@ -16,7 +23,8 @@ Bringing up the Docker Compose network with `site` instead of just using `up`, e
 - **mysql** - `:3306`
 - **php** - `:9000`
 - **redis** - `:6379`
-- **mailhog** - `:8025` 
+- **mailhog** - `:8025`
+- **mongodb** - `:27017`
 
 Three additional containers are included that handle Composer, NPM, and Artisan commands *without* having to have these platforms installed on your local computer. Use the following command examples from your project root, modifying them to fit your particular use case.
 
